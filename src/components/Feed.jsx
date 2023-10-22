@@ -11,7 +11,6 @@ const Feed = () => {
    fetchFromApi(`search?part=snippet&q=${selectedCategory}`).then(data => setVideos(data.items))
   }, [selectedCategory])
   
-
   return (
     <Stack
       sx={{
